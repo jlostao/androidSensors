@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/xAxisLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/xAxisValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@id/xAxisLabel"
+        android:layout_toEndOf="@id/xAxisLabel"/>
+
+    <TextView
+        android:id="@+id/yAxisLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:textSize="24sp"
+        android:layout_below="@id/xAxisLabel"
+        android:layout_alignStart="@id/xAxisLabel"/>
+
+    <TextView
+        android:id="@+id/yAxisValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@id/yAxisLabel"
+        android:layout_toEndOf="@id/yAxisLabel"/>
+
+    <TextView
+        android:id="@+id/zAxisLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z"
+        android:textSize="24sp"
+        android:layout_below="@id/yAxisLabel"
+        android:layout_alignStart="@id/xAxisLabel"/>
+
+    <TextView
+        android:id="@+id/zAxisValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@id/zAxisLabel"
+        android:layout_toEndOf="@id/zAxisLabel"/>
+
+</RelativeLayout>
